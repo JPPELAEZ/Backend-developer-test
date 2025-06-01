@@ -1,0 +1,19 @@
+{
+  "name": "testbackend",
+  "version": "1.0.0",
+  "description": "Backend developer test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JPPELAEZ/Backend-developer-test.git"
+  },
+  "author": "Juan Pablo Pelaez Camacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPPELAEZ/Backend-developer-test/issues"
+  },
+  "homepage": "https://github.com/JPPELAEZ/Backend-developer-test#readme"
+}
