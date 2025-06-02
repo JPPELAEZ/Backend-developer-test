@@ -148,6 +148,7 @@ for(let page =0 ; page <= 2; page++){
 /* --------------------------------se clara que el count es el total de todas las paginas
 y solo es traer una pagina para count y hacer los numeros primos desde ahi porque si no se va a demorar mucho
 ---------------------------------*/
+const fs = require('fs');
 const primos = [];
 const person=[];
 async function obtenerDatosV5() {
@@ -194,6 +195,18 @@ async function obtenerDatosV5() {
     console.log("Cantidad de personaje en el array:", person.length);
     console.log("Primer personaje:",person[0]);
     console.log("Último personaje:", person[primos.length - 1]);
+   
+    // Guardar los datos en un archivo JSON
+    const personJSON = JSON.stringify(person, null, 2);
+
+fs.writeFile('personajes.json', personJSON, (err) => {
+  if (err) {
+    console.error('Error al guardar el archivo:', err);
+  } else {
+    console.log('Archivo personajes.json creado exitosamente');
+  }
+});
+
 }
 obtenerDatosV5()
 

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JPPELAEZ/Backend-developer-test/issues"
   },
-  "homepage": "https://github.com/JPPELAEZ/Backend-developer-test#readme"
+  "homepage": "https://github.com/JPPELAEZ/Backend-developer-test#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
